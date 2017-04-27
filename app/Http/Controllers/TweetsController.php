@@ -19,7 +19,7 @@ class TweetsController extends Controller
      */
     public function __construct(Tweet $tweet)
     {
-        sleep(1);
+        sleep(1); // Wait for 1 second every request
 
         $this->tweet = $tweet;
     }
