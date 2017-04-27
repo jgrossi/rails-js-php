@@ -1,0 +1,22 @@
+@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+
+$family-primary: "Helvetica Neue", Arial, sans-serif;
+$body-size: 13px;
+$primary: $blue;
+
+@import "../../../node_modules/bulma/bulma";
+
+body {
+  background: #d5d5d5;
+}
+
+.container {
+  max-width: 500px;
+  padding: 1.5rem;
+}
+
+.textarea, textarea {
+  min-height: inherit;
+  height: auto;
+}
+
