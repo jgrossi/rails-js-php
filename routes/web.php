@@ -7,5 +7,5 @@ Route::get('/', function() {
 
 Route::get('/tweets', 'TweetsController@index');
 Route::post('/tweets', 'TweetsController@store');
-Route::delete('/tweets/{tweet}', 'TweetsController@delete');
+Route::delete('/tweets/{tweet}', 'TweetsController@destroy');
 Route::patch('/tweets/{tweet}/like', 'TweetsController@like');
