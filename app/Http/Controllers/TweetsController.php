@@ -55,13 +55,13 @@ class TweetsController extends Controller
      * @param Tweet $tweet
      * @return RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function delete(Request $request, Tweet $tweet)
+    public function destroy(Request $request, Tweet $tweet)
     {
         $id = $tweet->id;
         $tweet->delete();
 
         if ($request->ajax()) {
-            return view('tweets.delete', compact('id'));
+            return view('tweets.destroy', compact('id'));
         }
 
         return redirect('/tweets');

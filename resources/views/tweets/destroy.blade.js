@@ -1,0 +1,1 @@
+$('[data-tweet-id={{ $id }}]').fadeOut().remove();
